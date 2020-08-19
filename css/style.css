@@ -1,0 +1,102 @@
+/*
+----- I love to work with Roboto font, so i imported from Google Fonts -----
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
+
+/*
+------ Reset Margin and Padding ------ 
+*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F7EE;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 5% 0 5% 0;
+    font-weight: 500;
+}
+
+
+/*
+------ Menu card body ------
+*/
+.column {
+    float: left;
+    margin: 25px;
+    background-color: #B0BEA9;
+    width: 26%;
+    border: 2px solid #000;
+}
+
+
+.column>.box-title{
+    padding:0;
+    margin-left: 60%;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.chicken{
+    background-color: #CC7544;
+    color: #fff;
+    font-weight: 400;
+}
+
+.beef{
+    background-color: #80411D;
+    color: #fff;
+    font-weight: 400;
+}
+
+.sushi{
+    background-color: #372FCC;
+    color: #fff;
+    font-weight: 400;
+}
+
+.column > p {
+    padding: 10px;
+    text-align: left;
+}
+
+/*
+------ breaking point, Media query ------
+*/
+
+@media (min-width: 992px){
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .column:nth-child(1){
+        width: 39%;
+        margin-left: 50px;
+    }
+
+    .column:nth-child(2) {
+        width: 39%;
+        margin-right: 50px;
+    }
+
+    .column:nth-child(3){
+        width: 83%;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 767px){
+    .column{
+        width: 90%;
+    }
+}
