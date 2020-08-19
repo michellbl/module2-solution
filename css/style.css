@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
 
 /*
------- Reset Margin and Padding ------ 
+------ Reset Margin ------ 
 */
 *{
     margin: 0;
@@ -70,6 +70,9 @@ h1 {
 ------ breaking point, Media query ------
 */
 
+/*
+------ Changed the display flex to work only above 992px resolution, so under this resolution the cards will change with normal flow ------
+*/
 @media (min-width: 992px){
     .row {
         display: flex;
