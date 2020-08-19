@@ -1,2 +1,1 @@
-# module2-solution
-Module 2 Coding Assignment, for Coursera 
+https://michellbl.github.io/module2-solution/
